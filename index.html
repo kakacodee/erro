@@ -1,0 +1,72 @@
+<div id="modalAuto" class="modal-fundo">
+  <div class="modal-caixa">
+    <span class="modal-fechar" onclick="fecharModal()">&times;</span>
+    <img class="alerta" src="img/cuidado.png" alt="">
+    <h2 style="color:#ff4d4d; font-weight:bolder;font-size:40px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Erro</h2>
+    <p style="color: gray; font-weight:light;font-size:15px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Tente Novamente...</p>
+  </div>
+</div>
+<div>
+ <h1>Gostariamos de saber se...</h1>
+ <img class="img1" src="img/foto1.jpeg" alt="">
+</div>
+<style>
+    .modal-fundo {
+        background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 105vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+.alerta{
+    margin-top: 2vh;
+    width: 64px;
+    height:64px;
+}
+.img1{
+    margin-top: 2vh;
+    width: 1200px;
+    height:600px;
+}
+.modal-caixa {
+  background:white;
+  padding: 25px 30px;
+  width: 350px;
+  border-radius: 12px;
+  text-align: center;
+  position: relative;
+  animation: modalFade .3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+}
+
+.modal-fechar {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 28px;
+  height: 28px;
+  background: #ff4d4d;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes modalFade {
+  from { opacity: 0; transform: scale(.85); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+</style>
+<script src="script.js"></script>
