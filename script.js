@@ -51,7 +51,18 @@ sim.addEventListener("click", clicar)
 function clicar(){
     sim.style.transform="translate(0px)"
     nao.style.transform="translate(0px, 0px)"
+    estado = -1
     abrirModal()
     document.querySelector(".modalErro").innerHTML = "Obrigado"
     document.querySelector(".modalTry").innerHTML = "Isso significa muito para nós!"
+}
+
+nao.addEventListener("click", clicarnao)
+function clicarnao(){
+    sim.style.transform="translate(0px)"
+    nao.style.transform="translate(0px, 0px)"
+    estado = -1
+    abrirModal()
+    document.querySelector(".modalErro").innerHTML = "Que!?"
+    document.querySelector(".modalTry").innerHTML = "Desde quando tinha a opção de recusar? Volte lá e clique sim"
 }
