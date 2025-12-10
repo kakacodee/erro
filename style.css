@@ -1,0 +1,154 @@
+  .modal-fundo {
+    background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+.alerta{
+    margin-top: 2vh;
+    width: 64px;
+    height:64px;
+}
+.container-img {
+  margin-top: 14vh;
+    display: flex;
+    justify-content: center;
+    border:  solid #fff;
+    margin: 1%;
+    overflow: hidden;
+    border-radius: 50px;
+}
+.img1{
+    width: 100%;
+    height:95%;
+}
+.modal-caixa {
+  background:white;
+  padding: 25px 30px;
+  width: 350px;
+  border-radius: 12px;
+  text-align: center;
+  position: relative;
+  animation: modalFade .3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+}
+
+.modal-fechar {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 28px;
+  height: 28px;
+  background: #ff4d4d;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes modalFade {
+  from { opacity: 0; transform: scale(.85); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+#caixa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+#area{
+    background-color: #56A6C1;
+    width: 550px;
+    height: 390px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 15px;
+    box-shadow: 1px 3px 3px 2px rgba(1, 1, 1, .5);
+}
+#nao:hover{
+    color: red;
+}
+#sim:hover{
+    color: green;
+}
+.option{
+    background-color: #01142A;
+    height: 90px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    font-size: 35px;
+    color: #fff;
+    border-radius: 15px;
+    transition: all .5s;
+    box-shadow: 1px 3px 3px 2px rgba(1, 1, 1, .5);
+    cursor: pointer;
+}
+
+body{
+    background-image: url('img/fundoCity.jpeg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #000C24;
+}
+
+.textG{
+    margin-top: 10vh; 
+    text-align: center; 
+    color:black; 
+    font-weight:bolder; 
+    font-size:75px; 
+    text-shadow: 
+    2px 2px #fff,
+    -2px 2px #fff,
+    2px -2px #fff,
+    -2px -2px #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.TextParaninfo{
+    margin-top: 12vh; 
+    text-align: center; 
+    color:black;
+    text-shadow: 
+    2px 2px #fff,
+    -2px 2px #fff,
+    2px -2px #fff,
+    -2px -2px #fff;
+    font-weight:bolder; 
+    font-size:55px; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.modalErro{
+    color:#ff4d4d; 
+    font-weight:bolder;
+    font-size:40px; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.modalTry{
+    color: gray; 
+    font-weight:light;
+    font-size:15px; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

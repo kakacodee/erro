@@ -1,85 +1,39 @@
-<div id="modalAuto" class="modal-fundo">
-  <div class="modal-caixa">
-    <span class="modal-fechar" onclick="fecharModal()">&times;</span>
-    <img class="alerta" src="img/cuidado.png" alt="">
-    <h2 style="color:#ff4d4d; font-weight:bolder;font-size:40px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Erro</h2>
-    <p style="color: gray; font-weight:light;font-size:15px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Tente Novamente...</p>
-  </div>
-</div>
-<div>
- <h1 style=" margin-top: 10vh; text-align: center; color:black; font-weight:bolder; font-size:75px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Gostariamos de saber...</h1>
- 
- <div class="container-img">
- <img class="img1" src="img/foto1.jpeg" alt="">
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/icon.png">
 
-
- </div>
- <h1 style=" margin-top: 12vh; text-align: center; color:black; font-weight:bolder; font-size:55px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Você quer ser o nosso paraninfo?</h1>
- <input type="radio" value="Sim">
- <input type="radio" value="Não">
-</div>
-<style>
-    .modal-fundo {
-        background: rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0,0,0,0.5);
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-}
-.alerta{
-    margin-top: 2vh;
-    width: 64px;
-    height:64px;
-}
-.container-img {
-  margin-top: 14vh;
-    display: flex;
-    justify-content: center;
-}
-.img1{
-    
-    width: 98%;
-    height:95%;
-}
-.modal-caixa {
-  background:white;
-  padding: 25px 30px;
-  width: 350px;
-  border-radius: 12px;
-  text-align: center;
-  position: relative;
-  animation: modalFade .3s ease;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
-}
-
-.modal-fechar {
-  position: absolute;
-  top: -8px;
-  right: -8px;
-  width: 28px;
-  height: 28px;
-  background: #ff4d4d;
-  border-radius: 50%;
-  color: #fff;
-  font-size: 22px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@keyframes modalFade {
-  from { opacity: 0; transform: scale(.85); }
-  to { opacity: 1; transform: scale(1); }
-}
-
-</style>
+  <title>Cidade</title>
+</head>
+<main>
+  <body>
+    <div id="modalAuto" class="modal-fundo">
+      <div class="modal-caixa">
+        <span class="modal-fechar" onclick="fecharModal()">&times;</span>
+        <img class="alerta" src="img/cuidado.png" alt="alerta">
+        <h2 class="modalErro">Erro</h2>
+        <p class="modalTry">Tente Novamente...</p>
+      </div>
+    </div>
+    <div>
+      <h1 class="textG">Wellington Cidade,</h1>
+      <br>
+      <h1 class="textG">Gostariamos de saber...</h1>
+      <div class="container-img">
+        <img class="img1" src="img/foto1.jpeg" alt="foto Turma"/>
+      </div>
+      <h1 class="TextParaninfo">Você quer ser o nosso paraninfo?</h1>
+      <div id="caixa">
+        <div id="area">
+          <div class="option" id="sim">sim</div>
+          <div class="option" id="nao">não</div>
+        </div>
+      </div>
+    </div> 
+  </main>   
+</body>
 <script src="script.js"></script>
+</html>
